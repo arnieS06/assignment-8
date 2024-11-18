@@ -7,12 +7,10 @@ using namespace std;
 // so that the output is a double
 int main() {
     int x = 10;
-
     double y = 3; // changed this int variable to a double
 
-    double z = x/y;
-    
-    cout << z;
-    return 0;
+    double z = static_cast<double>(x) / y;
 
+    cout << z;  // Output the result
+    return 0;
 }
